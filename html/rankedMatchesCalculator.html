@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Partidas Ranqueadas</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Classificador de Heróis</h1>
+    </header>
+
+    <section>
+        <div>
+            <form id="playerForm">
+                <label>Digite seu nick:</label>
+                <input type="text" id="nickName" name="nickName" required>
+                <br>
+                <label>Vitorias do jogador:</label>
+                <input type="number" id="playerVictories" name="playerVictories" required>
+                <br>
+                <label>Derrotas do jogador:</label>
+                <input type="number" id="playerDefeats" name="playerDefeats" required>
+                <br>
+                <button id="classifyButton" type="submit">Classificar</button>
+              </form>
+        </div>
+        <div class="rank">
+            <img src="/assets/img/interrogacao.png" id="rankHero" class="rounded-img">
+        </div>
+
+        <div id="result"></div>
+    </section>
+  <script src="/assets/js/scriptRankedCalculator.js"></script>
+</body>
+</html>
